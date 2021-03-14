@@ -42,13 +42,23 @@ const calculator = () => {
     return total;
   }
 
-  const multiply = () => {
-    
+  const multiply = (...arr) => {
+    return arr.reduce((a, b) => a * b, 1);
   }
-  console.log(add(1,3,4,5))
-  console.log(subtract(7,3,2,-1,10))
-  console.log(divide(100,5,2))
+  console.log(add(1,3,4,5));
+  console.log(subtract(7,3,2,-1,10));
+  console.log(divide(100,5,2));
+  console.log(multiply(100,5,3));
 }
+
+//When an array shd return a list of objs present
+const frequencies = array =>
+  array.reduce((x, v) => {
+    x[v] = x[v] ? x[v] + 1 : 1;
+    return x;
+  }, {});
+
+//console.log(frequencies(['x', 'y', 'x', 'z', 'x', 'x', 'y']));
 
 calculator();
 
