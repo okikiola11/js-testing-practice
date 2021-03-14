@@ -6,8 +6,7 @@ const capitalize = (string) => {
 }
 
 const reverseString = (string) => {
-  let s = string.split(',').reverse().join();
-  console.log(s)
+  return string.split('').reverse().join('');
 }
 
 const calculator = () => {
