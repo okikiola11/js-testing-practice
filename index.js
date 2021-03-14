@@ -1,7 +1,7 @@
 const capitalize = (string) => {
-  let firstLetter = string[0].toUpperCase();
+  let firstStr = string[0].toUpperCase();
   if(string.charAt(0) === string[0]) 
-    string = firstLetter + string.slice(1);
+    string = firstStr + string.slice(1);
     return string;
 }
 
@@ -13,6 +13,8 @@ const calculator = () => {
   const add = (...arg) => {
     return arg.reduce((a, b) => a + b, 0);
   }
+  console.log(add(1,3,4,5))
 }
 
-console.log(reverseString('goodman'))
+calculator();
+
