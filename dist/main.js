@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_ceaserCipher__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/ceaserCipher */ \"./src/modules/ceaserCipher.js\");\n/* harmony import */ var _modules_calculator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/calculator */ \"./src/modules/calculator.js\");\n\n\n\nconst capitalize = (string) => {\n  let firstStr = string[0].toUpperCase();\n  if(string.charAt(0) === string[0]) \n    string = firstStr + string.slice(1);\n    return string;\n}\n\nconst reverseString = (string) => {\n  return string.split('').reverse().join('');\n}\n\n//When an array shd return a list of objs present\nconst frequencies = array =>\n  array.reduce((x, v) => {\n    x[v] = x[v] ? x[v] + 1 : 1;\n    return x;\n  }, {});\n\n//console.log(frequencies(['x', 'y', 'x', 'z', 'x', 'x', 'y']));\n\n(0,_modules_calculator__WEBPACK_IMPORTED_MODULE_1__.default)();\n(0,_modules_ceaserCipher__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n\n\n//# sourceURL=webpack://testing-pr/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_capitalize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/capitalize */ \"./src/modules/capitalize.js\");\n/* harmony import */ var _modules_ceaserCipher__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/ceaserCipher */ \"./src/modules/ceaserCipher.js\");\n/* harmony import */ var _modules_calculator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/calculator */ \"./src/modules/calculator.js\");\n\n\n\n\nconst reverseString = (string) => {\n  return string.split('').reverse().join('');\n}\n\n//When an array shd return a list of objs present\nconst frequencies = array =>\n  array.reduce((x, v) => {\n    x[v] = x[v] ? x[v] + 1 : 1;\n    return x;\n  }, {});\n\n//console.log(frequencies(['x', 'y', 'x', 'z', 'x', 'x', 'y']));\n\n(0,_modules_capitalize__WEBPACK_IMPORTED_MODULE_0__.default)('goodman');\n(0,_modules_calculator__WEBPACK_IMPORTED_MODULE_2__.default)();\n(0,_modules_ceaserCipher__WEBPACK_IMPORTED_MODULE_1__.default)();\n\n\n\n//# sourceURL=webpack://testing-pr/./src/index.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst calculator = () => {\n  const add = (...arg) => {\n    return arg.reduce((a, b) => a + b, 0);\n  }\n\n  const subtract = (...arg) => {\n    let total = arg[0];\n    if (typeof (total) !== 'number') return false;\n    length = arg.length;\n    for (let i = 1; i < length; i++) {\n      if (typeof (arg[i]) == 'number') {\n        total -= arg[i];\n      } else {\n        return false;\n      }\n    }\n    return total;\n  }\n\n  const divide = (...arg) => {\n    let total = arg[0];\n    if (typeof (total) !== 'number') return false;\n    length = arg.length;\n    for (let i = 1; i < length; i++) {\n      if (typeof (arg[i]) == 'number') {\n        total /= arg[i];\n      } else {\n        return false;\n      }\n    }\n    return total;\n  }\n\n  const multiply = (...arr) => {\n    return arr.reduce((a, b) => a * b, 1);\n  }\n\n  console.log(add(1,3,4,5));\n  console.log(subtract(7,3,2,-1,10));\n  console.log(divide(100,5,2));\n  console.log(multiply(100,5,3));\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (calculator);\n\n\n//# sourceURL=webpack://testing-pr/./src/modules/calculator.js?");
+
+/***/ }),
+
+/***/ "./src/modules/capitalize.js":
+/*!***********************************!*\
+  !*** ./src/modules/capitalize.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst capitalize = (string) => {\n  let firstStr = string[0].toUpperCase();\n  if(string.charAt(0) === string[0]) \n    string = firstStr + string.slice(1);\n    return string;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (capitalize);\n\n//# sourceURL=webpack://testing-pr/./src/modules/capitalize.js?");
 
 /***/ }),
 
