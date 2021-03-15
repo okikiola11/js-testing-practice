@@ -5,7 +5,7 @@ it('works', () => { // testing
 })
 
 it('returns false if the input value is an integer', () => {
-  expect(capitalize(1)).toBe(false);
+  expect(capitalize(1)).toBeFalsy();
 })
 
 it('capitalize the first string', () => {
