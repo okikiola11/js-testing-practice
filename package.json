@@ -7,7 +7,7 @@
     "build": "webpack --mode development",
     "dev:watch": "webpack --mode development --watch",
     "test": "jest",
-    "watch": "jest --watch */*.js"
+    "watch": "jest --watch test"
   },
   "author": "Apelehin Okikiola",
   "license": "ISC",
