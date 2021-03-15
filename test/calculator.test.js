@@ -9,13 +9,21 @@ test('adds two numbers', () => {
   expect(value).toEqual(6);
 });
 
-test('subtract two numbers', () => {
-  expect(subtract(5, 11)).toBe(6);
+it('returns false if the input value is not an integer', () => {
+  expect(subtract('he')).toBeFalsy();
 })
 
-test('divides two numbers', () => {
-  expect(divide(100, 10)).toBe(10);
+// it('subtract two numbers', () => {
+//   expect(subtract(5, 11)).toBe(6);
+// })
+
+it('returns false if the input value is not an integer', () => {
+  expect(divide('he')).toBeFalsy();
 })
+
+// it('divides two numbers', () => {
+//   expect(divide(100, 10)).toBe(10)
+// })
 
 test('multiplies two numbers', () => {
   expect(multiply(100, 10)).toBe(1000);

@@ -1,7 +1,7 @@
 {
   "name": "testing-pr",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project involves testing functions in different files modules using Jest",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
